@@ -71,6 +71,115 @@ body {
 }
 
 /* Navigation */
+/* Mobile */
+.btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+} */
+
+/* ********************** */
+/* Header */
+/* ********************** */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #fdf2e9; */
+  /* because we want to header to be stricky  */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+.logo {
+  height: 2.2rem;
+}
+/* ********************** */
+/* navigation */
+/* ********************** */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  /* Transition for animiations */
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+/* means have two classed
+ .main-nav-link.nav-cta:link */
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* Mobile */
+.btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+*:focus {
+  outline: none;
+  /* outline: 2px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.577);
+}
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -479,111 +588,3 @@ body {
   }
 }
 
-/* Mobile */
-.btn-mobile-nav {
-  border: none;
-  background-color: none;
-  cursor: pointer;
-
-  display: none;
-}
-.icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
-  color: #333;
-}
-
-.icon-mobile-nav[name='close-outline'] {
-  display: none;
-}
-
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fdf2e9;
-  height: 9.6rem;
-  padding: 0 4.8rem;
-  position: relative;
-} */
-
-/* ********************** */
-/* Header */
-/* ********************** */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* background-color: #fdf2e9; */
-  /* because we want to header to be stricky  */
-  height: 9.6rem;
-  padding: 0 4.8rem;
-  position: relative;
-}
-.logo {
-  height: 2.2rem;
-}
-/* ********************** */
-/* navigation */
-/* ********************** */
-
-.main-nav-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 4.8rem;
-}
-
-.main-nav-link:link,
-.main-nav-link:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 1.8rem;
-  /* Transition for animiations */
-  transition: all 0.3s;
-}
-
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: #cf711f;
-}
-/* means have two classed
- .main-nav-link.nav-cta:link */
-.main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited {
-  padding: 1.2rem 2.4rem;
-  border-radius: 9px;
-  color: #fff;
-  background-color: #e67e22;
-}
-
-.main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active {
-  background-color: #cf711f;
-}
-
-/* Mobile */
-.btn-mobile-nav {
-  border: none;
-  background-color: none;
-  cursor: pointer;
-
-  display: block;
-}
-.icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
-  color: #333;
-}
-
-.icon-mobile-nav[name='close-outline'] {
-  display: none;
-}
-*:focus {
-  outline: none;
-  /* outline: 2px dotted #e67e22; */
-  /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.577);
-}
